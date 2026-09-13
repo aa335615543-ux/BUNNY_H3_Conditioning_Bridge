@@ -103,7 +103,7 @@ Recommended folder:
 推荐目录：
 
 ```text
-ComfyUI/models/semantic_bridge/
+ComfyUI/custom_nodes/BUNNY_H3_Conditioning_Bridge/models/
 ```
 
 ---
@@ -134,7 +134,64 @@ Higher strength is not automatically better.
 强度并不是越高越好。
 
 ---
+## 🔌 Where should the node be connected?
+## 🔌 节点应该接在哪里？
 
+The Bridge must be placed **after the MiniMax H3 text-conditioning encoder**.  
+Bridge 必须放在 **MiniMax H3 文本 Conditioning 编码完成之后**。
+
+The easiest way to use it is to find the existing `CONDITIONING` cable in your H3 workflow, disconnect it, insert the Bridge in the middle, and reconnect the Bridge output to the original downstream node.  
+最简单的用法就是：找到你 H3 工作流里原本那根 `CONDITIONING` 线，把它断开，把 Bridge 插在中间，再把 Bridge 输出重新接回原来的下游节点。
+
+```text
+BEFORE / 原来：
+
+H3 Text / Prompt Conditioning
+        │
+        │ CONDITIONING
+        ▼
+Original downstream node
+原来的下游节点
+
+
+AFTER / 加入 Bridge 后：
+
+H3 Text / Prompt Conditioning
+        │
+        │ CONDITIONING
+        ▼
+BUNNY H3 Conditioning Bridge
+        │
+        │ CONDITIONING
+        ▼
+Original downstream node
+原来的下游节点
+```
+
+In simple terms:  
+简单来说：
+
+```text
+H3 Conditioning
+→ BUNNY H3 Conditioning Bridge
+→ Original downstream node
+```
+
+```text
+H3 Conditioning
+→ BUNNY H3 Conditioning Bridge
+→ 原来要接的下游节点
+```
+
+**Do not connect the Bridge to `MODEL`, `LoRA`, `LATENT`, `VAE`, image, or audio lines.**  
+**不要把 Bridge 接到 `MODEL`、`LoRA`、`LATENT`、`VAE`、图片或音频线路上。**
+
+It only receives and outputs `CONDITIONING`.  
+它只接收并输出 `CONDITIONING`。
+
+If your workflow already works normally without the Bridge, you do not need to rebuild the workflow. Just insert the Bridge into the existing H3 `CONDITIONING` connection.  
+如果你的工作流本来就可以正常运行，不需要重新搭工作流，只需要把 Bridge 插进现有的 H3 `CONDITIONING` 线路中间即可。
+---
 ## 📊 Current test observations
 ## 📊 当前测试观察
 
@@ -157,20 +214,20 @@ Because these are approximate field observations rather than a normalized statis
 ## 📥 Model links
 ## 📥 模型地址
 
-**Semantic Bridge V1:**  
-**Semantic Bridge V1：**
+**Semantic Bridge V1 and work flow:**  
+**Semantic Bridge V1 和工作流：**
 
-`MODEL_DOWNLOAD_LINK_HERE`
+`[MODEL_DOWNLOAD_LINK_HERE](https://huggingface.co/JOKER141/BUNNY-H3-Semantic-Bridge/tree/main)`
 
 **COMBAT V2:**  
 **COMBAT V2：**
 
-`COMBAT_V2_LINK_HERE`
+`[COMBAT_V2_LINK_HERE](https://huggingface.co/JOKER141/MiniMax-H3-Combat-Base-V2)`
 
 **Motion Continuity Repair LoRA:**  
 **动作连续性修复 LoRA：**
 
-`MOTION_REPAIR_LINK_HERE`
+`[MOTION_REPAIR_LINK_HERE](https://huggingface.co/JOKER141/MiniMax-H3-General-Motion-Continuity-Repair)`
 
 ---
 
