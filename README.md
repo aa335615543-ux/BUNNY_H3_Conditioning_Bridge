@@ -217,17 +217,17 @@ Because these are approximate field observations rather than a normalized statis
 **Semantic Bridge V1 and work flow:**  
 **Semantic Bridge V1 和工作流：**
 
-`[MODEL_DOWNLOAD_LINK_HERE](https://huggingface.co/JOKER141/BUNNY-H3-Semantic-Bridge/tree/main)`
+`https://huggingface.co/JOKER141/BUNNY-H3-Semantic-Bridge/tree/main`
 
 **COMBAT V2:**  
 **COMBAT V2：**
 
-`[COMBAT_V2_LINK_HERE](https://huggingface.co/JOKER141/MiniMax-H3-Combat-Base-V2)`
+`https://huggingface.co/JOKER141/MiniMax-H3-Combat-Base-V2`
 
 **Motion Continuity Repair LoRA:**  
 **动作连续性修复 LoRA：**
 
-`[MOTION_REPAIR_LINK_HERE](https://huggingface.co/JOKER141/MiniMax-H3-General-Motion-Continuity-Repair)`
+`https://huggingface.co/JOKER141/MiniMax-H3-General-Motion-Continuity-Repair`
 
 ---
 
