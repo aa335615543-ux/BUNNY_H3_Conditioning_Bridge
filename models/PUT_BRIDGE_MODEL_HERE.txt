@@ -1,0 +1,9 @@
+For a self-contained / RunningHub package, place the CURRENT adapter here:
+
+BUNNY_H3_SelectiveCrossLayer_ActionLogic_V1.safetensors
+
+The node also supports the legacy external model folder:
+ComfyUI/models/semantic_bridge/
+
+The older BUNNY_H3_ActionLogic_Bridge_V1.safetensors remains loadable for backward compatibility,
+but the bundle script will not silently substitute it for the current SelectiveCrossLayer model.
