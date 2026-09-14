@@ -105,7 +105,22 @@ Recommended folder:
 ```text
 ComfyUI/custom_nodes/BUNNY_H3_Conditioning_Bridge/models/
 ```
+## If installed through ComfyUI Manager, the folder name may appear as bunny-h3-semantic-bridge. This is normal.
+## 如果通过 ComfyUI Manager 安装，节点文件夹名称可能会显示为 bunny-h3-semantic-bridge，这是正常的。
 
+## The node does not depend on a fixed folder name. Just place the Bridge model inside the models folder of the actual installed node directory.
+## 节点并不依赖固定的文件夹名称，只需要把 Bridge 模型放进你实际安装的节点目录中的 models 文件夹即可。
+
+例如：
+
+ComfyUI/custom_nodes/BUNNY_H3_Conditioning_Bridge/models/
+
+或者：
+
+ComfyUI/custom_nodes/bunny-h3-semantic-bridge/models/
+
+Both are valid.
+两种都可以。
 ---
 
 ## ⚙️ Usage
