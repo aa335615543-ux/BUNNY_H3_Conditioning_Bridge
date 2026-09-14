@@ -1,4 +1,4 @@
-# 🐇 BUNNY H3 Semantic Bridge V1
+# 🐇 BUNNY_H3_Conditioning_Bridge
 
 > **A semantic-conditioning bridge for MiniMax H3.**  
 > **一个给 MiniMax H3 使用的语义增强 Bridge。**
@@ -35,8 +35,8 @@ Typical problems include:
 - **The next action continuing from the wrong previous state.**  
   **后一个动作从错误的前一状态继续。**
 
-Semantic Bridge V1 is designed to reduce these failures.  
-Semantic Bridge V1 主要就是针对这些问题。
+BUNNY_H3_Conditioning_Bridge is designed to reduce these failures.  
+BUNNY_H3_Conditioning_Bridge 主要就是针对这些问题。
 
 ---
 
@@ -217,17 +217,17 @@ Because these are approximate field observations rather than a normalized statis
 **Semantic Bridge V1 and work flow:**  
 **Semantic Bridge V1 和工作流：**
 
-`https://huggingface.co/JOKER141/BUNNY-H3-Semantic-Bridge/tree/main`
+https://huggingface.co/JOKER141/BUNNY_H3_Conditioning_Bridge
 
 **COMBAT V2:**  
 **COMBAT V2：**
 
-`https://huggingface.co/JOKER141/MiniMax-H3-Combat-Base-V2`
+https://huggingface.co/JOKER141/MiniMax-H3-Combat-Base-V2
 
 **Motion Continuity Repair LoRA:**  
 **动作连续性修复 LoRA：**
 
-`https://huggingface.co/JOKER141/MiniMax-H3-General-Motion-Continuity-Repair`
+https://huggingface.co/JOKER141/MiniMax-H3-General-Motion-Continuity-Repair
 
 ---
 
