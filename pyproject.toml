@@ -1,6 +1,6 @@
 [project]
 name = "bunny-h3-semantic-bridge"
-version = "1.0.0"
+version = "1.0.1"
 description = "Semantic conditioning bridge for MiniMax H3."
 requires-python = ">=3.10"
 dynamic = ["dependencies"]
@@ -9,7 +9,7 @@ dynamic = ["dependencies"]
 dependencies = { file = ["requirements.txt"] }
 
 [project.urls]
-Repository = "https://github.com/aa335615543-ux/BUNNY-H3-Semantic-Bridge"
+Repository = "https://github.com/aa335615543-ux/BUNNY_H3_Conditioning_Bridge"
 
 [tool.comfy]
 PublisherId = "fourbunny"
